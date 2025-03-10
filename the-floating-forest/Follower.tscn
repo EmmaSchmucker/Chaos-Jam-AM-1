@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpnehpjvm3kom"]
+
+[ext_resource type="Script" uid="uid://bwl6d3f3kla16" path="res://Follower.gd" id="1_kmeat"]
+[ext_resource type="Texture2D" uid="uid://ss5g3er57nwa" path="res://icon.svg" id="2_4q8bd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_38657"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wyljk"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Idle Bird",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Idle Frog",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Idle Rabbit",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Walk Bird",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Walk Frog",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Walk Rabbit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4q8bd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Follower" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+motion_mode = 1
+script = ExtResource("1_kmeat")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_38657")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wyljk")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+target_desired_distance = 100.0
