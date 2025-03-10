@@ -26,7 +26,7 @@ Code ---
 Next Steps:
 
 * Design enemy bosses
-* Display Party Health as walking around
+* Display Party Member's portraits with Health bars as you walk around
 * Berry interaction
 * Decide if we will actually do island-based special attacks
 * Build specials for Fox when you sacrifice party members
