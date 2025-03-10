@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://db22aw6gkdqgb"]
 
-[ext_resource type="Script" uid="uid://dsj20h37vmcb7" path="res://Combat/CombatUI.gd" id="1_3pvg3"]
+[ext_resource type="Script" uid="uid://kyxkexhs23y5" path="res://Combat/CombatUI.gd" id="1_3pvg3"]
 [ext_resource type="PackedScene" uid="uid://cdjyb4ulxs566" path="res://Combat/Portraits/Portrait.tscn" id="2_42nvl"]
 [ext_resource type="PackedScene" uid="uid://dvkpwcipw4s24" path="res://Combat/Portraits/BossPortait.tscn" id="3_jbcvh"]
 
