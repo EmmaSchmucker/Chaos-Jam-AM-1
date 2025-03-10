@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://byqwed8jkemeo"]
+[gd_scene load_steps=5 format=3 uid="uid://byqwed8jkemeo"]
 
+[ext_resource type="Texture2D" uid="uid://ss5g3er57nwa" path="res://icon.svg" id="2_6e6wb"]
 [ext_resource type="PackedScene" uid="uid://dhljbxps2adlj" path="res://WalkingScenes/Fox.tscn" id="2_k7i4b"]
+[ext_resource type="PackedScene" uid="uid://dulugnlag3nmd" path="res://WalkingScenes/CustomCamera.tscn" id="3_k7i4b"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_t7r8u"]
 vertices = PackedVector2Array(1196.76, 640, -61.8828, 640, -54.1172, 10, 1182.23, 10)
@@ -12,5 +14,21 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(1192, 0, 1207, 650, -72
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_t7r8u")
 
-[node name="Fox" parent="." instance=ExtResource("2_k7i4b")]
+[node name="Fox" parent="." node_paths=PackedStringArray("Camera") instance=ExtResource("2_k7i4b")]
 position = Vector2(658, 300)
+Camera = NodePath("../CustomCamera")
+
+[node name="Icon" type="Sprite2D" parent="."]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(1825, 357)
+scale = Vector2(7.96, 3.64)
+texture = ExtResource("2_6e6wb")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(-772, 357)
+scale = Vector2(7.96, 3.64)
+texture = ExtResource("2_6e6wb")
+
+[node name="CustomCamera" parent="." instance=ExtResource("3_k7i4b")]
+position = Vector2(576, 324)

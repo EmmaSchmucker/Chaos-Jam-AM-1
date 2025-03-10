@@ -4,6 +4,7 @@ var follower_scene = preload("res://WalkingScenes/Follower.tscn")
 
 const SPEED = 30000
 @onready var Sprite = $AnimatedSprite2D
+@export var Camera: Camera2D
 
 func _ready() -> void:
 	var party = GlobalVariables.GetParty()
@@ -28,3 +29,7 @@ func _physics_process(delta: float) -> void:
 	# get_vector() is basically shorthand for 2 get_axis() calls. It gets the direction quick and easy
 	velocity = direction * delta * SPEED
 	move_and_slide()
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	Camera.scroll(position.x)

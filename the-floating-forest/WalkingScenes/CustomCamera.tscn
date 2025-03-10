@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dulugnlag3nmd"]
+
+[ext_resource type="Script" uid="uid://csdxmj0ksa1o7" path="res://WalkingScenes/CustomCamera.gd" id="1_24dnl"]
+
+[node name="CustomCamera" type="Camera2D"]
+script = ExtResource("1_24dnl")
