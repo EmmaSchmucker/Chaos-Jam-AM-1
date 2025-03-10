@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpnehpjvm3kom"]
 
-[ext_resource type="Script" uid="uid://bwl6d3f3kla16" path="res://Follower.gd" id="1_kmeat"]
+[ext_resource type="Script" uid="uid://bwl6d3f3kla16" path="res://WalkingScenes/Follower.gd" id="1_kmeat"]
 [ext_resource type="Texture2D" uid="uid://ss5g3er57nwa" path="res://icon.svg" id="2_4q8bd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_38657"]

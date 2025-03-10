@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://byqwed8jkemeo"]
 
-[ext_resource type="PackedScene" uid="uid://dhljbxps2adlj" path="res://Fox.tscn" id="1_vi3g2"]
-[ext_resource type="PackedScene" uid="uid://dpnehpjvm3kom" path="res://Follower.tscn" id="2_0rwks"]
+[ext_resource type="PackedScene" uid="uid://dpnehpjvm3kom" path="res://WalkingScenes/Follower.tscn" id="1_6e6wb"]
+[ext_resource type="PackedScene" uid="uid://dhljbxps2adlj" path="res://WalkingScenes/Fox.tscn" id="2_k7i4b"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_t7r8u"]
 vertices = PackedVector2Array(1196.76, 640, -61.8828, 640, -54.1172, 10, 1182.23, 10)
@@ -13,20 +13,20 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(1192, 0, 1207, 650, -72
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_t7r8u")
 
-[node name="Follower3" parent="." node_paths=PackedStringArray("Target") instance=ExtResource("2_0rwks")]
+[node name="Follower3" parent="." node_paths=PackedStringArray("Target") instance=ExtResource("1_6e6wb")]
 modulate = Color(1, 1, 0, 1)
 position = Vector2(147, 209)
 Target = NodePath("../Follower2")
 
-[node name="Follower2" parent="." node_paths=PackedStringArray("Target") instance=ExtResource("2_0rwks")]
+[node name="Follower2" parent="." node_paths=PackedStringArray("Target") instance=ExtResource("1_6e6wb")]
 modulate = Color(0, 1, 1, 1)
 position = Vector2(147, 209)
 Target = NodePath("../Follower")
 
-[node name="Follower" parent="." node_paths=PackedStringArray("Target") instance=ExtResource("2_0rwks")]
+[node name="Follower" parent="." node_paths=PackedStringArray("Target") instance=ExtResource("1_6e6wb")]
 modulate = Color(1, 0, 1, 1)
 position = Vector2(147, 209)
 Target = NodePath("../Fox")
 
-[node name="Fox" parent="." instance=ExtResource("1_vi3g2")]
+[node name="Fox" parent="." instance=ExtResource("2_k7i4b")]
 position = Vector2(658, 300)
