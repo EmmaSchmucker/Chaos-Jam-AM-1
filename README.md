@@ -4,3 +4,5 @@ A 2D top-down RPG where you play as Fox, leading their team of animals to collec
 
 Link to our ClickUp:
 [https://app.clickup.com/9013704915/docs/8cm4e6k-93](https://app.clickup.com/9013704915/docs/8cm4e6k-93)
+
+Check our Kanban to see our progress.
