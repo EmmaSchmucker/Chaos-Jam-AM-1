@@ -1,0 +1,56 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://dqmmwjtye2kf8"]
+
+[sub_resource type="FontFile" id="FontFile_68krt"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mfkxx"]
+bg_color = Color(0.698094, 0.164118, 0.249774, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.429037, 0.0831513, 0.124426, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xx8p3"]
+bg_color = Color(0.997773, 0.334793, 0.386839, 1)
+border_width_bottom = 2
+border_color = Color(0.634162, 0, 0.0592794, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[resource]
+ProgressBar/colors/font_outline_color = Color(0.535465, 0, 0.0408902, 1)
+ProgressBar/constants/outline_size = 2
+ProgressBar/font_sizes/font_size = 12
+ProgressBar/fonts/font = SubResource("FontFile_68krt")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_mfkxx")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_xx8p3")

@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdjyb4ulxs566"]
+
+[ext_resource type="Texture2D" uid="uid://cne4dtru8pxtj" path="res://icon.svg" id="1_feb0e"]
+[ext_resource type="Script" path="res://Combat/Portraits/Portrait.gd" id="2_filhu"]
+[ext_resource type="Theme" uid="uid://dqmmwjtye2kf8" path="res://Combat/Portraits/RedProgressBar.tres" id="2_vtekf"]
+[ext_resource type="Theme" uid="uid://ctxrmd13f7stb" path="res://Combat/Portraits/BlueProgressBar.tres" id="3_s12pg"]
+
+[node name="Portrait" type="TextureRect"]
+offset_right = 128.0
+offset_bottom = 128.0
+texture = ExtResource("1_feb0e")
+script = ExtResource("2_filhu")
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_top = 133.0
+offset_right = 128.0
+offset_bottom = 152.0
+theme = ExtResource("2_vtekf")
+value = 50.0
+
+[node name="ManaBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_top = 160.0
+offset_right = 128.0
+offset_bottom = 179.0
+theme = ExtResource("3_s12pg")
+value = 50.0

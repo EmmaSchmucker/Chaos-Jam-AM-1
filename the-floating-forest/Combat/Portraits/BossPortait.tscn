@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvkpwcipw4s24"]
+
+[ext_resource type="PackedScene" uid="uid://cdjyb4ulxs566" path="res://Combat/Portraits/Portrait.tscn" id="1_cpyq6"]
+
+[node name="Portrait" instance=ExtResource("1_cpyq6")]
+offset_right = 397.0
+offset_bottom = 397.0
+
+[node name="HealthBar" parent="." index="0"]
+offset_left = -24.0
+offset_top = 405.0
+offset_right = 421.0
+offset_bottom = 424.0
+
+[node name="ManaBar" parent="." index="1"]
+offset_left = -24.0
+offset_top = 433.0
+offset_right = 421.0
+offset_bottom = 452.0
