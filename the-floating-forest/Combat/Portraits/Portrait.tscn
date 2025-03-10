@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cdjyb4ulxs566"]
 
-[ext_resource type="Texture2D" uid="uid://cne4dtru8pxtj" path="res://icon.svg" id="1_feb0e"]
-[ext_resource type="Script" path="res://Combat/Portraits/Portrait.gd" id="2_filhu"]
+[ext_resource type="Texture2D" uid="uid://ss5g3er57nwa" path="res://icon.svg" id="1_feb0e"]
+[ext_resource type="Script" uid="uid://djjgquwpdcwvf" path="res://Combat/Portraits/Portrait.gd" id="2_filhu"]
 [ext_resource type="Theme" uid="uid://dqmmwjtye2kf8" path="res://Combat/Portraits/RedProgressBar.tres" id="2_vtekf"]
 [ext_resource type="Theme" uid="uid://ctxrmd13f7stb" path="res://Combat/Portraits/BlueProgressBar.tres" id="3_s12pg"]
 
