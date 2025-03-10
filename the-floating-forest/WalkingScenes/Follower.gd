@@ -10,13 +10,13 @@ const SPEED = 20000
 @export var Target: CharacterBody2D # Keeps the followers in line.
 
 func _ready() -> void:
-	#match animal_string: # match my beloved
-		#animal_string == "Rabbit":
-			#animal_string = "Rabbit"
-		#animal_string == "Frog":
-			#animal_string = "Frog"
-		#animal_string == "Bird":
-			#animal_string = "Bird"
+	match animal_string: # match my beloved
+		"Rabbit":
+			modulate = Color(1, 0, 0)
+		"Frog":
+			modulate = Color(0, 1, 0)
+		"Bird":
+			modulate = Color(0, 0, 1)
 	
 	if animal_string != "Not set": # Just because the animations are not done yet
 		if velocity != Vector2.ZERO:
