@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhljbxps2adlj"]
+
+[ext_resource type="Script" uid="uid://cf2u3m5juviff" path="res://WalkingScenes/Fox.gd" id="1_38657"]
+[ext_resource type="Texture2D" uid="uid://ss5g3er57nwa" path="res://icon.svg" id="2_idrk7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_38657"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wyljk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_idrk7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Fox" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_38657")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_38657")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wyljk")

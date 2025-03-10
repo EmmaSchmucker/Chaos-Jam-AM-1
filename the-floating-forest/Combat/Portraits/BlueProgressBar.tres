@@ -1,0 +1,46 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://ctxrmd13f7stb"]
+
+[sub_resource type="FontFile" id="FontFile_st0hf"]
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h378e"]
+bg_color = Color(0.274162, 0.378649, 0.770159, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.104056, 0.233543, 0.484149, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tse60"]
+bg_color = Color(0.308086, 0.472413, 1, 1)
+border_width_bottom = 2
+border_color = Color(0.192753, 0.325803, 0.636852, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[resource]
+ProgressBar/colors/font_outline_color = Color(0.183162, 0.311052, 0.684253, 1)
+ProgressBar/constants/outline_size = 2
+ProgressBar/font_sizes/font_size = 12
+ProgressBar/fonts/font = SubResource("FontFile_st0hf")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_h378e")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_tse60")
