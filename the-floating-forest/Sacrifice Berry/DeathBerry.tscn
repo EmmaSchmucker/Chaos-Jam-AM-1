@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://be4q5bkbfbppx"]
+
+[ext_resource type="Texture2D" uid="uid://bppkx8kadefp2" path="res://Art/EvilassStrwberry.png" id="1_h4yk1"]
+[ext_resource type="Script" uid="uid://b64ubtdsj3nmo" path="res://Sacrifice Berry/death_berry.gd" id="1_yv2fc"]
+[ext_resource type="PackedScene" uid="uid://rvd2xb8wqcu6" path="res://interaction/interactionarea/InteractionArea.tscn" id="2_yv2fc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3a5yn"]
+radius = 85.4751
+
+[node name="DeathBerry" type="Node2D"]
+script = ExtResource("1_yv2fc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_h4yk1")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_yv2fc")]
+action_name = "Sacrifice"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_3a5yn")
