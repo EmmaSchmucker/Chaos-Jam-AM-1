@@ -31,8 +31,5 @@ sources/0 = SubResource("TileSetAtlasSource_n2ydt")
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_ksvpq")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(579, 328)
-
 [node name="Fox" parent="." instance=ExtResource("2_akhdx")]
 position = Vector2(582, 340)

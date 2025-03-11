@@ -29,7 +29,3 @@ func _physics_process(delta: float) -> void:
 	# get_vector() is basically shorthand for 2 get_axis() calls. It gets the direction quick and easy
 	velocity = direction * delta * SPEED
 	move_and_slide()
-
-
-func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
-	Camera.scroll(position.x)
