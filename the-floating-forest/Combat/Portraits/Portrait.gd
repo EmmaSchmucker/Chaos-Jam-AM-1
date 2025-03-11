@@ -3,7 +3,8 @@ extends TextureRect
 var HealthBar: ProgressBar
 var ManaBar: ProgressBar
 
-#was AliveTexture and DeadTexture, I changed it due to it causeing a error in CombatUI.Gd
+# Was AliveTexture and DeadTexture, I changed it due to it causeing a error in CombatUI.GD with AliveImage looks like it
+# Looks like it fixed it but I just metioning if it needs to be reverted.
 var AliveImage: Texture2D
 var DeadImage: Texture2D
 
