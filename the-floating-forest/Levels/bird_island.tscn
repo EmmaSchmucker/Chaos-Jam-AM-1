@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://qhcpci3kaods"]
+
+[ext_resource type="Texture2D" uid="uid://c83iiirdrh0mc" path="res://Art/grasstileset.png" id="1_cwo8h"]
+[ext_resource type="PackedScene" uid="uid://dhljbxps2adlj" path="res://WalkingScenes/Fox.tscn" id="2_akhdx"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n2ydt"]
+texture = ExtResource("1_cwo8h")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ksvpq"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_n2ydt")
+
+[node name="BirdIsland" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_ksvpq")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(579, 328)
+
+[node name="Fox" parent="." instance=ExtResource("2_akhdx")]
+position = Vector2(582, 340)
