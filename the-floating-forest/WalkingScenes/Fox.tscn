@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dhljbxps2adlj"]
+[gd_scene load_steps=6 format=3 uid="uid://dhljbxps2adlj"]
 
 [ext_resource type="Script" uid="uid://cf2u3m5juviff" path="res://WalkingScenes/Fox.gd" id="1_38657"]
+[ext_resource type="Texture2D" uid="uid://dkr1s7f4i0d3e" path="res://Art/fox.png" id="2_a60wq"]
 [ext_resource type="Texture2D" uid="uid://ss5g3er57nwa" path="res://icon.svg" id="2_idrk7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_38657"]
@@ -8,6 +9,9 @@
 [sub_resource type="SpriteFrames" id="SpriteFrames_wyljk"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a60wq")
+}, {
 "duration": 1.0,
 "texture": ExtResource("2_idrk7")
 }],
@@ -32,5 +36,7 @@ shape = SubResource("CapsuleShape2D_38657")
 sprite_frames = SubResource("SpriteFrames_wyljk")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -12,6 +12,7 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(1192, 0, 1207, 650, -72
 [node name="IslandFox" type="Node2D"]
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+position = Vector2(60, -2)
 navigation_polygon = SubResource("NavigationPolygon_t7r8u")
 
 [node name="Fox" parent="." node_paths=PackedStringArray("Camera") instance=ExtResource("2_k7i4b")]
@@ -31,4 +32,4 @@ scale = Vector2(7.96, 3.64)
 texture = ExtResource("2_6e6wb")
 
 [node name="CustomCamera" parent="." instance=ExtResource("3_k7i4b")]
-position = Vector2(576, 324)
+position = Vector2(586, 326)

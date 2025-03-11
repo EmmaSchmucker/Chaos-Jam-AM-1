@@ -25,11 +25,7 @@ func _ready() -> void:
 		previous_follower = new_follower
 
 func _physics_process(delta: float) -> void:
-	var direction = Input.get_vector("left", "right", "up", "down") # Since this has a limit of 1, movement is already normalized!
+	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down") # Since this has a limit of 1, movement is already normalized!
 	# get_vector() is basically shorthand for 2 get_axis() calls. It gets the direction quick and easy
 	velocity = direction * delta * SPEED
 	move_and_slide()
-
-
-func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
-	Camera.scroll(position.x)
