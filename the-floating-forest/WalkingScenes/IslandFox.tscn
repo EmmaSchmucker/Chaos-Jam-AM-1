@@ -32,4 +32,5 @@ scale = Vector2(7.96, 3.64)
 texture = ExtResource("2_6e6wb")
 
 [node name="CustomCamera" parent="." instance=ExtResource("3_k7i4b")]
-position = Vector2(586, 326)
+position = Vector2(100, 326)
+zoom = Vector2(0.25, 0.25)

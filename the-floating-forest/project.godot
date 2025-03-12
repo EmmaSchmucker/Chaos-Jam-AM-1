@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The Floating Forest"
-run/main_scene="uid://db22aw6gkdqgb"
+run/main_scene="uid://cuav8y2tdk2av"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GlobalVariables="*res://GlobalVariables.gd"
 InteractionManager="*res://interaction/Interaction Manager.tscn"
+Save="*res://Save.gd"
 
 [dotnet]
 
