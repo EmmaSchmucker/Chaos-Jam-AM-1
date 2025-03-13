@@ -13,7 +13,7 @@ func _ready() -> void:
 	var previous_follower = self
 	for follower in party:
 		print(follower)
-		if follower == "Fox":
+		if follsower == "Fox":
 			continue
 		
 		var new_follower = follower_scene.instantiate()
