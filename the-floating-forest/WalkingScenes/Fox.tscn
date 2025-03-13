@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c0052x3sesuh5" path="res://Art/FoxSprites.png" id="2_kgdfi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_38657"]
+height = 64.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a60wq"]
 atlas = ExtResource("2_kgdfi")
@@ -146,6 +147,7 @@ motion_mode = 1
 script = ExtResource("1_38657")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
 shape = SubResource("CapsuleShape2D_38657")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

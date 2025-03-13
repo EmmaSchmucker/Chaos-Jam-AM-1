@@ -12,11 +12,11 @@ const SPEED = 20000
 func _ready() -> void:
 	match animal_string: # match my beloved
 		"Rabbit":
-			modulate = Color(1, 0, 0)
+			Sprite.play("Idle Rabbit")
 		"Frog":
-			modulate = Color(0, 1, 0)
+			Sprite.play("Idle Frog")
 		"Bird":
-			modulate = Color(0, 0, 1)
+			Sprite.play("Idle Bird")
 	
 	if animal_string != "Not set": # Just because the animations are not done yet
 		if velocity != Vector2.ZERO:

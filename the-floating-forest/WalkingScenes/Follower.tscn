@@ -1,23 +1,49 @@
-[gd_scene load_steps=5 format=3 uid="uid://dpnehpjvm3kom"]
+[gd_scene load_steps=11 format=3 uid="uid://dpnehpjvm3kom"]
 
 [ext_resource type="Script" uid="uid://bwl6d3f3kla16" path="res://WalkingScenes/Follower.gd" id="1_kmeat"]
 [ext_resource type="Texture2D" uid="uid://ss5g3er57nwa" path="res://icon.svg" id="2_4q8bd"]
+[ext_resource type="Texture2D" uid="uid://da40ifa0o603t" path="res://Art/BirdPlaceholder.png" id="2_hcr43"]
+[ext_resource type="Texture2D" uid="uid://c1s1vqtj3rppp" path="res://Art/FrogPlaceHolder.png" id="3_1cd0k"]
+[ext_resource type="Texture2D" uid="uid://djl5i1y6p1nej" path="res://Art/BunnyPlaceholder.png" id="4_u6jao"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_38657"]
+radius = 11.0
+height = 50.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp3i2"]
+atlas = ExtResource("2_hcr43")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5ws5"]
+atlas = ExtResource("3_1cd0k")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_govcq"]
+atlas = ExtResource("4_u6jao")
+region = Rect2(0, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wyljk"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp3i2")
+}],
 "loop": true,
 "name": &"Idle Bird",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5ws5")
+}],
 "loop": true,
 "name": &"Idle Frog",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_govcq")
+}],
 "loop": true,
 "name": &"Idle Rabbit",
 "speed": 5.0
@@ -53,10 +79,13 @@ motion_mode = 1
 script = ExtResource("1_kmeat")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
 shape = SubResource("CapsuleShape2D_38657")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.43127, 2.124)
 sprite_frames = SubResource("SpriteFrames_wyljk")
+animation = &"Idle Bird"
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 target_desired_distance = 100.0
