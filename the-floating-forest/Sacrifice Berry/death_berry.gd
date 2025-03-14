@@ -10,4 +10,4 @@ func _ready():
 func Sacrifice():
 	print("die")
 	
-	interaction_area.fox.queue_free() #this is just a funny, sacrifice should probably do something else lol
+	#interaction_area.fox.queue_free() #this is just a funny, sacrifice should probably do something else lol
