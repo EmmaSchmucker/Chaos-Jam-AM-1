@@ -13,7 +13,7 @@ func _ready() -> void:
 	var previous_follower = self
 	for follower in party:
 		print(follower)
-		if follsower == "Fox":
+		if follower == "Fox":
 			continue
 		
 		var new_follower = follower_scene.instantiate()
@@ -27,7 +27,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down") # Since this has a limit of 1, movement is already normalized!
 	# get_vector() is basically shorthand for 2 get_axis() calls. It gets the direction quick and easy
-	print(direction)
+	#print(direction)
 	if Input.is_action_just_pressed("ui_left"):
 		$AnimatedSprite2D.play("walkleft")
 	elif Input.is_action_just_pressed("ui_right"):

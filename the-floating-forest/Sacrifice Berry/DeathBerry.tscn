@@ -7,8 +7,9 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_3a5yn"]
 radius = 85.4751
 
-[node name="DeathBerry" type="Node2D"]
+[node name="DeathBerry" type="Node2D" node_paths=PackedStringArray("interaction_area")]
 script = ExtResource("1_yv2fc")
+interaction_area = NodePath("InteractionArea")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_h4yk1")

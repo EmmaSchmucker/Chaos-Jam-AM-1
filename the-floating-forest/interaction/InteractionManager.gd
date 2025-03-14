@@ -38,7 +38,7 @@ func _input(event):
 		if active_areas.size() > 0:
 			can_interact = false
 			label.hide()
-			##Im not sure why this errors it was broken when I got it but I cant figure out how to fix it
+			#Im not sure why this errors it was broken when I got it but I cant figure out how to fix it
 			await active_areas[0].interact.call()
 			
 			can_interact = true
